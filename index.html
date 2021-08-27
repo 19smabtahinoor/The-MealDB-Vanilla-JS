@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal DB</title>
+    <link rel="shortcut icon" href="https://smabtahinoor.vercel.app/images/profilepic.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-700">
+
+    <div class="max-w-screen-xl mx-auto px-12">
+
+        <div class="flex items-center justify-center py-4">
+            <img src="https://www.themealdb.com/images/logo-small.png" alt="logo">
+            <p class="flex justify-end text-white">Made by 💖 <a class="text-yellow-300 hover:underline" href="https://smabtahinoor.vercel.app" target="_blank">S.M.Abtahi Noor</a></p>
+        </div>
+        <div class="flex items-center justify-center space-x-4 mt-6">
+            <input id="input_field" type="text"
+                class="w-72 border border-gray-400 focus:ring-4 focus:ring-blue-300 focus:outline-none transition duration-700 px-6 py-3 rounded"
+                placeholder="Search any Food😎😎" />
+            <button
+                class="px-6 py-3 bg-yellow-500 border border-yellow-500 rounded text-white hover:bg-white hover:text-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition duration-500"
+                type="button" onclick="searchFood()">Search</button>
+        </div>
+
+        <!-- single meal details  -->
+        <div id="meal_details"></div>
+
+        <!-- search meal  -->
+        <div id="show_search_meals" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12">
+
+        </div>
+
+        
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
